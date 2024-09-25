@@ -1,40 +1,43 @@
 export const perguntas = [
     {
-        enunciado: "O que caracteriza o racismo estrutural na sociedade?",
+        enunciado: "O que é o racismo?",
         alternativas: [
             {
-                texto: "Desigualdades raciais",
+                texto: "ofender alguém quanto a cor",
                 afirmacao: [
-                    "São perpetuadas por instituições, políticas e normas sociais.",
+                    "sim, existe casos de racismo em que a pessoa ofende gravemente a outra quanto a cor de pele",
                     "afirmacao 2"
-                    ]
+                    ],
+                    proxima: 1,
             },
             {
-                texto: "Discriminação individual",
+                texto: "ofender alguém quando é discriminado sobre a condição social",
                 afirmacao: [
-                    "Apenas a discriminações individual e direta afeta a sociedade",
+                    "que pena, você errou, o racismo é ofender alguém quanto a cor da pele da pessoa",
                     "afirmacao 2"
-                    ]
+                    ],
+                    proxima: 2,
             }           
             
         ]
     },
     {
-        enunciado: "principal dano causado pelo racismo",
+        enunciado: "você ja praticou racismo?",
         alternativas: [
             {
-                texto:"fortalece a autoestima das vitimas",
+                texto:"sim",
                 afirmacao: [
-                    "racismo enfraquece a autoestima, perpetuando sentimentos de inferioridade",
+                    "melhor rever seus atos, e começar a se colocar no lugar do outro, assim, parar de praticar racismo",
                     "afirmacao 2"
                     ]
             },
             {
-                texto: "contribui para a exclusão social e marginalização de grupos minoritarios ",
+                texto: "não ",
                 afirmacao: [
-                    "reforça a desigualdade e estereótipos discriminatórios",
+                    "que bom, continue assim",
                     "afirmacao 2"
-                    ]
+                    ],
+                    proxima: 2,
             }
         ]
     },
