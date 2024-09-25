@@ -13,6 +13,9 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
+
+botaoIniciar.addEventLIstener('click', iniciaJogo);
+
 function mostraPergunta() {
     if(atual >= perguntas.length){
         mostraResultado();
@@ -36,7 +39,14 @@ function mostraAlternativas(){
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = (opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + " ";
-    atual++;
+    if(opcaoSelecionada.proxima !== undefined) {
+        atual =opcaoSelecionada.proxima;
+    }else {
+        mostraResultado();
+
+        return;
+
+    }
     mostraPergunta();
 }
 
